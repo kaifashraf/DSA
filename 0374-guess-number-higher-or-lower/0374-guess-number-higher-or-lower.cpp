@@ -14,11 +14,11 @@ public:
         int r=n;
         while(l<=r){
             int mid=l+(r-l)/2;
-            int number= guess(mid);
-            if (number==0){
+            
+            if (guess(mid)==0){
                 return mid;
             }
-            else if( number==-1){
+            else if(guess(mid)==-1){
                 r=mid-1;
             }
             else{
